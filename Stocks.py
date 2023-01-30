@@ -1,21 +1,21 @@
 '''
 Kevin Collura
 Professor Eckert
-CS 175L
+CS-175L
 Stocks
 '''
 #Inputs
 numShares=int(input('How many shares did you purchase? '))
-stockSoldFor=float(input('Amount the stock sold for:$ '))
-purchaseCommission=float(input('Commission paid on the purchase:$  '))
-sellingCommission=float(input('Commission paid on the sale:$ '))
+commissionRate=float(input('Commission paid on the purchase:  '))
+sellingCommission=float(input('Commission paid on the sale: '))
 purchasePrice=float(input('Amount paid for the stock:$ '))
+sellingprice=float(input('Amount the stock sold for:$ '))
 #Calculations
 amountPaidForStock=numShares*purchasePrice
-totalPaid=amountPaidForStock+purchaseCommission
 purchaseCommission=commissionRate*purchasePrice
+totalPaid=amountPaidForStock+purchaseCommission
 stockSoldFor=numShares*sellingprice
-sellingCommission=commissionRate*stockSoldfor
+sellingCommission=commissionRate*stockSoldFor
 totalRecieved=stockSoldFor-sellingCommission
 profitOrLoss=totalRecieved-totalPaid
 
