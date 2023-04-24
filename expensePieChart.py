@@ -15,7 +15,7 @@ def main():
     file_name.close
 
     for x in range(len(expenses)):
-        expenses[i] = expenses[x].rstrip('\n')
+        expenses[x] = expenses[x].rstrip('\n')
 
     sliceLabels = ['Rent', 'Gas', 'Food', 'Clothing', 'Car Payment', 'Misc.']
 
